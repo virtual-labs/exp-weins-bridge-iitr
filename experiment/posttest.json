@@ -1,39 +1,5 @@
-{
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+[{"question":"Which one of the following bridges is a type of DC bridge?","answers":{"a":"Wheatstone Bridge","b":"Schering Bridge","c":"Wein Bridge","d":"All of the above"},"correctAnswer":"a"},
+{"question":"The Wien’s bridge is suitable for the measurement of frequency of the range of?","answers":{"a":"Less than 100Hz","b":"1KHz to 100MHz","c":"100Hz to 100KHz","d":"More than 100MHz"},"correctAnswer":"c"},
+{"question":"The dielectric loss of pure capacitor is equal to-","answers":{"a":"1","b":"0","c":"Maximum","d":"None of the above"},"correctAnswer":"b"},
+{"question":"Under balanced condition, the current flowing through the detector is equal to-","answers":{"a":"1A","b":"0A","c":"Sum of the currents flowing in the adjacent arms","d":"Difference between the current flowing in the adjacent arms"},"correctAnswer":"b"},
+{"question":"The commonly used detectors in AC bridges is/are-","answers":{"a":"HeadPhones","b":"Galvanometers","c":"Tuned Amplifiers","d":"All of the above"},"correctAnswer":"d"}]
