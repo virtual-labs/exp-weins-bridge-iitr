@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <title>Virtual Labs | Wein's Bridge</title>
+	 <link rel="stylesheet" type="text/css" href="css/main.css">
+
+     <!-- <meta http-equiv="content-type" content="text/html;charset=utf-8" /> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+        <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"> -->
+
+        <link rel="stylesheet" href="css/demo1.css">
+        <link rel="icon" href="./images/Vlab logo.jpg" type="image/x-icon">
+
+         <!--link of Seven Segment code  starts-->
+         <!-- <link href="prettify.css" rel="stylesheet">  -->
+         <script src="js/jquery.min.js"></script>
+         <script src="js/jquery-ui.min.js"></script>
+         <script src="js/knockout-2.2.1.js"></script>
+         <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.js"></script>  -->
+         <script src="js/sevenSeg.js"></script>
+         <script src="js/demo.js"></script>
+    
+         <!--link of seven Segment code ends-->
+
+</head>
+<body>
+<div class="box" style="position:absolute;">
+		<div class="container1" style="position:absolute;">
+			<img src="images\Logo.png" width="95px" height="92.5px" style="margin-left: 5px; float: left;" >
+			<center><h2 >Virtual Labs IIT Roorkee<br>Electrical Measurement Laboratory<br></h2>
+			<h2 style="background-color: black;">Measurement of Unknown Capacitance & Resistance Using Wein Bridge</h2></center></div>
+			<div style="position: relative; margin-top: 100px;"><br>
+      </div>
+       <!--mcb code-->
+     
+
+      <img src="images\mcb1.png"  onclick="mcbonoff();" width="90px" height="150px" style="margin-left:2px; margin-top:10px; position:absolute;" id ="mcbb";>
+      <b> <p style="position:absolute; color: black; margin-left: 24px; margin-top:117px; font-size: 20px;">MCB</p></b>
+
+
+      <div id="mcb1" style="position:absolute;">
+        
+      </div>
+      <!--kit code-->
+      <div class="container2" style="position:absolute;">
+
+      	<div class="knob" style="position:absolute;">
+      		<img src="images\knobs part 11.png" width="80px" height="80px" 
+            style="margin-left:25px; margin-top:25px; position:absolute;" id="knob6">
+          <img src="images\knobs part 2.png" width="122px" height="102px" 
+            style="margin-left:2px; margin-top:3px; position:absolute;">
+             
+      	</div>
+        <select id="select_1" class="select_1" disabled="true">
+          <option value="0" disabled selected>x 10K&#8486</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>  
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+
+        <select id="select_2" class="select_2" disabled="true">
+          <option value="6">200&#8486 </option> 
+        </select>
+
+        <select id="select_3" class="select_3" disabled="true">
+          <option value="7">100&#8486 </option>
+        </select>
+
+        <select id="select_4" class="select_4" disabled="true">
+          <option value="0" disabled selected>x 10K&#8486 </option>
+          <option value="8">0.5</option>
+          <option value="9">1</option>
+          <option value="10">1.5</option>
+          <option value="11">2</option>
+          <option value="12">2.5</option>
+        </select>
+
+        <select id="select_5" class="select_5" disabled="true">
+          <option value="0" disabled selected>AMPLITUDE</option>
+          <option value="21">MIN</option>
+          <option value="22">MAX</option>
+        </select>
+        <div>
+          
+        </div>
+         <img src="images\push1.png" width="30px" height="30px" 
+            style="margin-left:65px; margin-top:225px; position:absolute;" id='power' >
+            <b> <p style="position:absolute;color:white;margin-left:100px;margin-top:230px;">POWER</p></b> 
+      	<!--knob5-->
+      	<div style="position:absolute;">
+          <p style="position:absolute;color:white;left:776px;top:294px;"></p>
+        </div>
+      	<div class="k5back" style="position:absolute;">
+      		<img src="images\knobs part 11.png" width="80px" height="80px"
+            style="margin-left:25px; margin-top:25px; position:absolute;" id="knob5">
+          <img src="images\knobs part 44.png" width="122px" height="102px"
+            style="margin-left:2px; margin-top:3px; position:absolute;">
+             <b> <p style="position:absolute;color:white;margin-left:55px;margin-top:-23px;">Rx</p></b>
+            </div>
+            	<!--detector code-->
+      	    <div class="detector" style="position:absolute;">
+      		  <b><p style="position:absolute;color:white;margin-left:-10px;margin-top:112.5px;">DIGITAL&nbsp&nbspNULL&nbsp&nbspDETECTOR</p> </b>
+      	    </div>
+            <!-- speaker image
+            <div  class="speaker" style="position:absolute;">
+            	<img src="images\speaker.png" width="220px" height="140" style="position:absolute;margin-left:-30px;"></div>
+              <b> <p style="position:absolute;color:white;margin-left:55px;margin-top:185px;">SPEAKER</p></b> -->
+      	<!--circuit diagram-->
+      	<div class="circuit" style="position:absolute;">
+      		<img src="images\ckt3.png" height="250px " width="280px" style="position:absolute;margin-left:300px;margin-top:5px;">
+      		<b> <p style="position:absolute;color:white;margin-left:365px;margin-top:270px;">CIRCUIT&nbsp&nbspDIAGRAM</p></b>
+           <b> <p style="position:relative; color:red; margin-left:380px; margin-top:38px;">R1</p></b>
+           <b> <p style="position:relative; color:red; margin-left:500px; margin-top:-20px;">R2</p></b>
+           <b> <p style="position:relative; color:red; margin-left:490px; margin-top:92px;">R3</p></b>
+           <b> <p style="position:relative; color:red; margin-left:376px; margin-top:-40px;">Rx</p></b>
+           <b> <p style="position:relative; color:red; margin-left:345px; margin-top:-125px;">C1</p></b>
+           <b> <p style="position:relative; color:red; margin-left:343px; margin-top:42px;">Cx</p></b>
+           <b> <p style="position:relative; color:blue; margin-left:345px; margin-top:-52px;">A</p></b>
+           
+      	</div>
+      	<!--capacitor code-->
+      	<div  class="capacitor" style="position:absolute;">
+      		<img src="images\cap2.png" height="60px" width="120px" style="position:absolute;margin-top:10px;margin-left:5px;">
+           <b> <p style="position:absolute;color:white;margin-left:-3px;margin-top:110px; font-size: 12px;">UNKNOWN&nbsp&nbspCAPACITANCE</p></b>
+           <b> <p style="position:relative; color:red; margin-left:60px; margin-top:-1px;">Cx</p></b>
+
+      	</div>
+      	<!--knob1 code-->
+      	<div class="k1back" style="position:absolute;">
+      		
+          <img src="images\knobs part 11.png" width="80px" height="80px"
+            style="margin-left:25px; margin-top:25px; position:absolute;" id="knob1">
+          <img src="images\knobp.png" width="130px" height="102px"
+            style=" margin-top:3px; position:absolute;">
+            <b> <p style="position:absolute;color:white;margin-left:50px;margin-top:-23px;">R1</p></b>
+
+        </div>
+        <!--knob2 code-->
+        <div class="k2back" style="position:absolute;">
+          <img src="images\knobs part 11.png" width="80px" height="80px"
+            style="margin-left:25px; margin-top:25px; position:absolute;" id="knob2">
+          <img src="images\knobq.png" width="130px" height="102px"
+            style=" margin-top:3px; position:absolute;">
+            <b> <p style="position:absolute;color:white;margin-left:55px;margin-top:-23px;">R2</p></b>
+        </div>
+        <!--knob3 code-->
+        <div class="k3back" style="position:absolute;">
+          <img src="images\knobs part 11.png" width="80px" height="80px"
+            style="margin-left:25px; margin-top:25px; position:absolute;" id="knob3">
+          <img src="images\knobq.png" width="130px" height="102px"
+            style="margin-top:3px; position:absolute;">
+             <b> <p style="position:absolute;color:white;margin-left:55px;margin-top:-23px;">R3</p></b>
+        </div>
+        <!--knob4 code-->
+        <!--div style="position:absolute;">
+          <p style="position:absolute;color:white;left:600px;top:294px;"></p>
+        </div>
+        <div class="k4back" style="position:absolute;">
+          <img src="images\knobs part 11.png" width="80px" height="80px"
+            style="margin-left:25px; margin-top:25px; position:absolute;" id="knob4">
+          <img src="images\knobr.png" width="130px" height="102px"
+            style="margin-left:; margin-top:3px; position:absolute;">
+        </div-->
+        
+        <!--instruction buttton-->
+      <div class="dropdown">
+  			<button class="dropbtn">INSTRUCTIONS</button>
+  			<div class="dropdown-content">
+          <p><b>STEP 1  :</b> Make Connections as per the instructions given below:</p>              
+          <p>1.&nbsp &nbsp <b>M<sub>1</sub></b> of MCB - <b>P<sub>1</sub></b> of Power and <b>M<sub>2</sub></b> of MCB - <b>P<sub>2</sub></b> of Power</p>
+          <p>2.&nbsp &nbsp <b>A<sub>1</sub></b> of Amplitude - <b>A<sub>3</sub></b> of Circuit Diagram and <b>A<sub>2</sub></b> of Amplitude - <b>A<sub>4</sub></b> of Circuit Diagram </p>
+          <p>3.&nbsp &nbsp <b>D<sub>1</sub></b> of Digital Null Detector - <b>B</b> of Circuit Diagram</p>
+          <p>4.&nbsp &nbsp <b>D<sub>2</sub></b> of Digital Null Detector - <b>D</b> of Circuit Diagram</p>
+          <p>5.&nbsp &nbsp <b>COM</b> - <b>C</b> of Circuit Diagram</p>
+          <p>6.&nbsp &nbsp <b>C<sub>X</sub></b> - <b>D</b> of Circuit Diagram</p>
+
+          <b><p>NOTE : If wire is wrongly connected, Click on node number to detach the wire.</p></b>
+                             
+          <p><b>STEP 2  :</b> Click on <b>"CHECK"</b> Button for checking the connections. &nbsp &nbsp</p>
+          <p><b>STEP 3  :</b> Click on the MCB to Turn ON the supply.</p>
+          <p><b>STEP 4  :</b> Set Amplitude to maximum from dropdown.</p>
+          
+          <p><b>STEP 5  :</b> Select the resistance values from various dropdown to get minimum value from digital null detector.</p>
+          <p><b>STEP 6  :</b> Click on <b>"ADD"</b> button to add the readings to the Observation Table.</p>
+          <b><p>NOTE : If combination is wrong then select another combination.</p></b>
+          <p><b>STEP 7  :</b> Add different readings to the table by selecting different values from dropdown.</p>
+          <p><b>STEP 8  :</b> Click on <b>"PRINT"</b> button to print the webpage.</p>
+          <p><b>STEP 9 :</b> Click on <b>"RESET"</b> button to refresh the webpage.</p>
+        </div>
+		</div>
+
+		<!--buttons code-->
+    <div class="btn" style="position:absolute; margin-left: 165px; margin-top: -6px;">
+		<input type="button" value="CHECK" class="check" id="check-button" style="position:absolute; top:525px;left:570px;">
+		<input type="button" value="ADD" id="add" style="position:absolute; top: 525px;left:0px;" onclick="addtotable();">
+		<input type="button" value="RESET" id="reset" id="button" style="position:absolute; top:525px;left:390px;" onclick="window.location.href = 'wein_series.html';">
+  
+		<input type="button" value="PRINT" id="print" style="position:absolute; top:525px;left:755px" onclick="window.print()">
+    </div>
+
+		<!--Formula code-->
+		<div class="formula" style="position:absolute;">
+  			<center><h2><u>FORMULA</u></h2></center>
+  			<div><p>1.&nbsp Find C<sub>x</sub> (Unknown Capacitance)  </p>
+  				<p>&nbsp&nbsp&nbsp&nbsp    Where,&nbsp C<sub>x</sub> = (C<sub>1</sub>*R<sub>2</sub>)/R<sub>3</sub> ,&nbsp C<sub>1</sub> = 0.01&#181F  </p>
+  				
+  				<p>2.&nbsp Find R<sub>x</sub> (Unknown Resistance) </p>
+          <p> &nbsp&nbsp&nbsp&nbsp    Where,&nbsp  R<sub>x</sub> = (R<sub>1</sub>*R<sub>3</sub>)/R<sub>2</sub>  </p>
+  				
+  				
+			</div>
+		</div>
+		<!--table code-->
+    <div class="otable">OBSERVATION TABLE
+		<div style="margin-top: 5px; position:absolute;">
+			<table class="a" id="tb1" style="margin-left: -115px;">
+  			<tbody>
+				<tr>
+          <th>S.NO.</th>
+          <th>R<sub>1</sub>(K&#8486)</th>
+          <th>R<sub>2</sub>(&#8486)</th>
+          <th>R<sub>3</sub>(&#8486)</th>
+          <th>R<sub>x</sub>(K&#8486)</th>
+          <th>C<sub>x</sub>(&#181F)</th>
+        
+        </tr>
+  			</tbody>
+			</table>
+		</div>
+	</div>
+
+      
+	</div>
+  <center><div class="copyright" style="position:absolute">&#169 2022 Virtual Labs, IIT Roorkee</div></center>
+  </div>
+
+   <div class="jtk-demo-main">
+            <!-- demo -->
+            <div class="jtk-demo-canvas canvas-wide animation-demo jtk-surface jtk-surface-nopan" id="canvas">
+                <div class="littledot" id="ld1"></br><a style="color: red;" href="#" class="cmdLink detach" rel="ld1" id="dis1">A<sub>1</sub></a></div>
+
+                <div class="littledot" id="ld2"></br><a style="color: red;" href="#" class="cmdLink detach" rel="ld2" id="dis2">A<sub>2</sub></a></div>
+
+                <div class="littledot" id="ld3"></br><a style="color: red;" href="#" class="cmd Link detach" rel="ld3" id="dis3">COM</a></div>
+                <div class="littledot" id="ld4"></br><a style="color: red;" href="#" class="cmdLink detach" rel="ld4" id="dis4">C<sub>X</sub></a></div>
+                <div class="littledot" id="ld5"></br><a style="color: red;" href="#" class="cmdLink detach" rel="ld5" id="dis5">A<sub>3</sub></a></div>
+           
+                <div class="littledot" id="ld6"></br><a style="color: red;" href="#" class="cmdLink detach" rel="ld6" id="dis6">A<sub>4</sub></a></div>
+                 <div class="littledot" id="ld7"></br><a style="color: red;"href="#" class="cmdLink detach" rel="ld7" id="dis7">C</a></div>
+                  <div class="littledot" id="ld8"></br><a style="color: red;"href="#" class="cmdLink detach" rel="ld8" id="dis8">D</a></div>
+                   <div class="littledot" id="ld9"></br><a style="color: red;"href="#" class="cmdLink detach" rel="ld9" id="dis9">B</a></div>
+                    <div class="littledot" id="ld10"></br><a style="color: red;"href="#" class="cmdLink detach" rel="ld10" id="dis10">M<sub>1</sub></a></div>
+                     <div class="littledot" id="ld11"></br><a style="color: red;"href="#" class="cmdLink detach" rel="ld11" id="dis11">M<sub>2</sub></a></div>
+                      <div class="littledot" id="ld12"></br><a style="color: red;"href="#" class="cmdLink detach" rel="ld12" id="dis12">P<sub>1</sub></a></div>
+                        <div class="littledot" id="ld13"></br><a style="color: red;"href="#" class="cmdLink detach" rel="ld13" id="dis13">P<sub>2</sub></a></div>
+                        <div class="littledot" id="ld14"></br><a style="color: red;" href="#" class="cmdLink detach" rel="ld14" id="dis14">D<sub>1</sub></a></div>
+                        <div class="littledot" id="ld15"></br><a style="color: red;" href="#" class="cmdLink detach" rel="ld15" id="dis15">D<sub>2</sub></a></div>
+                        
+
+<br><br>
+
+            
+        </div><br>
+
+        <!-- JS -->
+        <script src="js/jsplumb1.js"></script>
+        <!-- /JS -->
+
+    <!--  demo code -->
+    <script src="js/demo1.js"></script>
+    <!-- <div class="content" style="position: absolute;"> -->
+
+    <div class="exampleContainer">
+      <div id="testArray1" class="med-sevenSegArray5Slanted"></div>
+      </div>
+
+
+
+</body>
+
+<!--Scrypting of seven segment code starts-->
+
+<script>
+
+  (function (i, s, o, g, r, a, m) {
+             i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                 (i[r].q = i[r].q || []).push(arguments)
+             }, i[r].l = 1 * new Date(); a = s.createElement(o),
+             m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+         })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+ 
+         ga('create', 'UA-44023738-2', 'brandonlwhite.github.io');
+         ga('send', 'pageview');
+        
+ </script>
+ 
+
+</html>
