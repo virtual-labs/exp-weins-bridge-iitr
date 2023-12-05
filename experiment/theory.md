@@ -1,4 +1,12 @@
-## Introduction
+<head>
+
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> 
+  
+</script>
+
+</head>
+
+### Introduction
 
 <div style="text-align: justify; font-size: 18px;font-family: 'Nunito Sans',sans-serif;">
 Wien's bridge is an ac electrical circuit widely used for the measurement of capacitance with high accuracy and can also be used for measuring frequency. The circuit consists of four arms, two arms with a series combination of resistors and capacitors and the other two arms have resistors. The circuit diagram of Wien's bridge is shown below:<br>
