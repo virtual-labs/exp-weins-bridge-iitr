@@ -13,7 +13,7 @@ Wien's bridge is an ac electrical circuit widely used for the measurement of cap
 
 <center>
 
-<img src="images/ckt.png" style="-webkit-filter: grayscale(100%);" height="250">  
+<img src="images/Ckt.png" style="-webkit-filter: grayscale(100%);" height="250">  
 
 **Fig.1 Wein's Bridge**
 </center>
