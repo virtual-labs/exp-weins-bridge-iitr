@@ -24,13 +24,13 @@ Let Z1, Z2, Z3, and Z4 be the impedances of the arm AB, BC, CD, and AD respectiv
 
 <center>
 
-$$Z1 = R1 + \frac{1}{jωC1}$$
+$$ Z1 = R1 + \frac{1}{jωC1} $$
 
 </center>
 
 <center>
 
-$$Z2 = R2$$
+$$ Z2 = R2 $$
 
 </center>
 
@@ -42,7 +42,7 @@ $$Z3 = R3$$
 
 <center>
 
-$$Z4 =Rx + \frac{1}{jωCx}$$
+$$ Z4 =Rx + \frac{1}{jωCx} $$
 
 </center>
 
@@ -50,7 +50,7 @@ When the bridge is balanced, We have, <br>
 
 <center>
 
-$$Z1Z3 = Z2Z4$$
+$$ Z1Z3 = Z2Z4 $$
 
 </center>
 
@@ -62,7 +62,7 @@ $$\frac{R2}{R3} = \frac{R1 + \left (\frac{1}{jωC1} \right )}{Rx + \left (\frac{
 
 <center>
 
-$$R2Rx + \left (\frac{R2}{jωCx} \right ) = R1R3 + \left (\frac{R3}{jωC1} \right )$$
+$$ R2Rx + \left (\frac{R2}{jωCx} \right ) = R1R3 + \left (\frac{R3}{jωC1} \right )$$
 
 </center>
 
@@ -70,31 +70,31 @@ Now, Equating the Real and Imaginary terms,
 
 <center>
 
-$$R2Rx = R1R3$$
+$$ R2Rx = R1R3 $$
 
 </center>
 
 <center>
 
-$$Rx = \frac{R1R3}{R2}…. (1)$$
+$$ Rx = \frac{R1R3}{R2}…. (1) $$
 
 </center>
 
 <center>
 
-$$\frac{R2}{jωCx} = \frac{R3}{jωC1}$$
+$$ \frac{R2}{jωCx} = \frac{R3}{jωC1} $$
 
 </center>
 
 <center>
 
-$$\frac{R2}{Cx} = \frac{R3}{C1}$$
+$$ \frac{R2}{Cx} = \frac{R3}{C1} $$
 
 </center>
 
 <center>
 
-$$Cx = \frac{C1R2}{R3}.... (2)$$
+$$ Cx = \frac{C1R2}{R3}.... (2) $$
 
 </center>
 
