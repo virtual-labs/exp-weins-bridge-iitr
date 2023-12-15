@@ -1,0 +1,5 @@
+[{"question":"Wein bridge can be used for _________.","answers":{"a":"Measurement of Inductance","b":"Measurement of Capacitance and Resistance","c":"Measurement of Resistance","d":"Measurement of Voltage and Current"},"correctAnswer":"b"},
+{"question":"Balance equation for computing the value of an unknown resistance is?","answers":{"a":"Rx = R2/R1","b":"Rx = R2*R3/R1","c":"Rx = R1*R3/R2","d":"Rx = R3/R1"},"correctAnswer":"c"},
+{"question":"Balance equation for computing the value of an unknown capacitance is?","answers":{"a":"Cx = C1*R2/R3","b":"Cx = R2*C1","c":"Cx = R2*R3/C1","d":"Cx = R3*C1"},"correctAnswer":"a"},
+{"question":"The Ac Bridge which is used for the measurement of frequency is?","answers":{"a":"Maxwell's Bridge","b":"Schering Bridge","c":"Hay's Bridge","d":"Wein's Bridge"},"correctAnswer":"d"},
+{"question":"Which of the following bridges is used to measure power factor?","answers":{"a":"Wein's Bridge","b":"Maxwell's Bridge","c":"Schering Bridge","d":"Kelvin Bridge"},"correctAnswer":"c"}]
