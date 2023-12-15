@@ -1,5 +1,3 @@
-## Procedure<br>
-    
 **STEP 1 :** Make Connections as per the instructions given below:</p>
         <p><b>1.</b>&nbsp; &nbsp; <b>M<sub>1</sub></b> of MCB - <b>P<sub>1</sub></b> of Power and <b>M<sub>2</sub></b> of MCB - <b>P<sub>2</sub></b> of Power</p> 
         <p><b>2.</b>&nbsp; &nbsp; <b>A<sub>1</sub></b> of Amplitude - <b>A<sub>3</sub></b> of Circuit Diagram and <b>A<sub>2</sub></b> of Amplitude - <b>A<sub>4</sub></b> of Circuit Diagram</p>
